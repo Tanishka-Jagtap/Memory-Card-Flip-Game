@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+### Memory Card Flip Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based memory card matching game that challenges players to match all card pairs in the fewest possible turns. This project serves as a fun and interactive example of React component development, state management, and dynamic UI updates.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Dynamic Card Shuffling**: Cards are shuffled randomly at the start of each game.
 
-### `npm start`
+2. **Turn Tracking**: The game tracks the number of turns taken to match all pairs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Matched Pair Detection**: Cards stay flipped once matched.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Win Condition**: A congratulatory message appears when all pairs are matched.
 
-### `npm test`
+5. **Restart Option**: Restart the game anytime with a single click.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
+Initial - 
+![image](https://github.com/user-attachments/assets/2ce0d68e-80e9-495f-afc9-e6179efb66bd)
 
-### `npm run build`
+Winning -
+![image](https://github.com/user-attachments/assets/f6f1d52d-0928-4080-9473-850fcd9ffe14)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **React.js:** For building the interactive UI.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **CSS:** For styling the components.
 
-### `npm run eject`
+## How to Run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js installed on your system.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Basic understanding of React.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Setup
 
-## Learn More
+- Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/yourusername/memory-card-flip-game.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Navigate to the project directory:
 
-### Code Splitting
+cd memory-card-flip-game
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Install dependencies:
 
-### Analyzing the Bundle Size
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Start the development server:
 
-### Making a Progressive Web App
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Open the game in your browser at http://localhost:3000.
 
-### Advanced Configuration
+## File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+.
+├── src
+│   ├── components
+│   │   └── SingleCard.js   # Component for individual card
+|   |   └── SingleCard.css
+│   ├── App.js             # Main application logic
+│   ├── App.css            # Styles for the application
+│   └── index.js           # Entry point
+|   └── index.css
+├── public
+│   ├── img                # Images for cards
+│   └── index.html         # HTML template
+├── package.json           # Project dependencies and scripts
+└── README.md              # Project documentation
 
-### Deployment
+## How to Play
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Click any two cards to flip them.
 
-### `npm run build` fails to minify
+- If the cards match, they remain flipped.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- If the cards do not match, they will flip back after a second.
+
+- Repeat until all pairs are matched.
+
+- Enjoy your win screen and try again to improve your score!
+
+## Customization
+
+**Adding New Cards**
+
+- Add new images to the public/img folder.
+
+- Update the cardImages array in App.js to include the new card(s):
+
+const cardImages = [
+  { "src": "/img/NewCard.png", matched: false },
+  // other cards
+];
+
+**Changing Styles**
+
+Modify the App.css file to update the game’s appearance.
+
+Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request with your changes. Ensure your code is well-documented and tested.
+
+Acknowledgments
+
+Special thanks to Pokémon for the card images used in this project.
+
+Inspired by classic memory-matching games.
