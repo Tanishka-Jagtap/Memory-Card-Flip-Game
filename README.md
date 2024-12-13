@@ -64,10 +64,11 @@ npm install
 npm start
 ```
 
-- Open the game in your browser at http://localhost:3000#L4.
+- Open the game in your browser at http://localhost:3000.#L4
 
 ## File Structure
 
+```
 .
 ├── src
 │   ├── components
@@ -82,6 +83,7 @@ npm start
 │   └── index.html         # HTML template
 ├── package.json           # Project dependencies and scripts
 └── README.md              # Project documentation
+```
 
 ## How to Play
 
