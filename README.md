@@ -42,21 +42,29 @@ Winning -
 
 - Clone the repository:
 
+```
 git clone https://github.com/yourusername/memory-card-flip-game.git
+```
 
 - Navigate to the project directory:
 
+```
 cd memory-card-flip-game
+```
 
 - Install dependencies:
 
+```
 npm install
+```
 
 - Start the development server:
 
+```
 npm start
+```
 
-- Open the game in your browser at http://localhost:3000.
+- Open the game in your browser at http://localhost:3000#L4.
 
 ## File Structure
 
@@ -95,10 +103,12 @@ npm start
 
 - Update the cardImages array in App.js to include the new card(s):
 
+```
 const cardImages = [
   { "src": "/img/NewCard.png", matched: false },
   // other cards
 ];
+```
 
 **Changing Styles**
 
