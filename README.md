@@ -1,4 +1,4 @@
-### Memory Card Flip Game
+# **Memory Card Flip Game**
 
 A React-based memory card matching game that challenges players to match all card pairs in the fewest possible turns. This project serves as a fun and interactive example of React component development, state management, and dynamic UI updates.
 
@@ -15,10 +15,13 @@ A React-based memory card matching game that challenges players to match all car
 5. **Restart Option**: Restart the game anytime with a single click.
 
 ## Screenshots
-Initial - 
+
+Initial -
+
 ![image](https://github.com/user-attachments/assets/2ce0d68e-80e9-495f-afc9-e6179efb66bd)
 
 Winning -
+
 ![image](https://github.com/user-attachments/assets/f6f1d52d-0928-4080-9473-850fcd9ffe14)
 
 ## Technologies Used
@@ -29,13 +32,13 @@ Winning -
 
 ## How to Run
 
-# Prerequisites
+### Prerequisites
 
 - Node.js installed on your system.
 
 - Basic understanding of React.
 
-# Setup
+## Setup
 
 - Clone the repository:
 
@@ -101,11 +104,11 @@ const cardImages = [
 
 Modify the App.css file to update the game’s appearance.
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please fork this repository and submit a pull request with your changes. Ensure your code is well-documented and tested.
 
-Acknowledgments
+## Acknowledgments
 
 Special thanks to Pokémon for the card images used in this project.
 
